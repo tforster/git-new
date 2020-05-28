@@ -62,6 +62,7 @@ git clone git@github.com:tforster/git-new.git
 
 ## Release History
 
+- 0.1.1 **Updated eslint dependency version** (2020-05-29)
 - 0.1.0 **Initial Creation** (2020-04-09)
 
 Initial creation of this project and Git repository.
