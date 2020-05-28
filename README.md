@@ -4,67 +4,124 @@
 
 Inspired by Eric Meyers CSS Reset, Git New is a simple tool to enforce a consistent baseline Git experience for new projects.
 
-## Installation
+- [Git New](#git-new)
 
-Linux, Windows and OSX
+  - [For Project Developers](#for-project-developers)
+    - [Prerequisites](#prerequisites)
+    - [Setup and Configuration](#setup-and-configuration)
+  - [For Installers](#for-installers)
+    - [Prerequisites](#prerequisites-1)
+    - [Setup and Configuration](#setup-and-configuration-1)
+  - [Change log](#change-log)
+  - [Meta](#meta)
+  - [Contributing](#contributing)
 
-```sh
-git clone git@github.com:tforster/git-new.git
-```
+## For Developers
 
-## Usage example
+Follow this section if you are developing with, installing or deploying this repository.
 
-This repository is intended to serve as a template for new projects by providing a consistent set of control files. Use it by cloning to your new project folder, editing some key properties, re-initialising the .git folder to remove this history and finally replacing the remote with your own.
+### Prerequisites
+
+- A good code editor. We suggest [VSCode](https://code.visualstudio.com/), [Atom](https://atom.io/) or [SublimeText](https://www.sublimetext.com/).
+- [NodeJS LTS+ and NPM 6.14+](https://nodejs.org/en/download/)
+- [Git 2.25+](https://git-scm.com/downloads)
+
+### Setup and Configuration
 
 ```sh
 # 1. Clone this repository as your new project
 git clone git@github.com:tforster/git-new.git /my/path/to/my/project-name
+
+```
+
+### Usage
+
+This repository is intended to serve as a template for new projects by providing a consistent set of control files. Use it by cloning to your new project folder, editing some key properties, re-initialising the .git folder to remove this history and finally replacing the remote with your own.
+
+```sh
+# 1. Switch to your new project folder
 cd /my/path/to/my/project-name
 
-# 2. Edit this README.md and package.json to suit your project
+# 2. Remove the git-new .git database
+rm -rf .git
+
+# 3. Install NPM dependencies including linters and code prettiers
+npm i
+
+# 4. Edit this README.md and package.json to suit your project
 #    - Edit the title to match your project
 #    - Edit the description to describe your project
 
-# 3. Edit package.json
+# 5. Edit package.json
 #    - Update the title to match the title of this README
 #    - Update the description to match the description of this README
 #    - Edit the semantic version to match your project requirements
-#    - Change the Git details including repository, bugs and homepage
 
-# 4. Delete any unwanted files in /docker (or the entire /docker folder if you're not containerising)
+# 6. Delete any unwanted files in /docker (or the entire /docker folder if you're not containerising)
 
-# 5. Delete the hidden .git folder created when you cloned
-rm -rf .git
-
-# 6. Re-initialise .git
+# 7. Re-initialise .git
 git init
 
-# 7. Add your own repo's origin
-git remote add origin my-git-origin
+# 8. Add your own repo's origin
+git remote add origin {my-git-origin}
 
-# 8. Delete this instruction block
+# 9. Update package.json to reflect the new origin and clean up any other properties by following the prompts
+npm init
 
-# 9. Stage and commit files
+# 10. Delete this instruction block
+
+# 11. Stage and commit files
 git add -A
 git commit -m"Initial creation"
 
-# 10. Push
+# 12. Push
 git push -u origin master
+
+# 13. Create a develop branch (workflow dependent)
+git checkout -b develop
+git push -u origin develop
+
+# Your project and repo are ready for your first feature branch
+git checkout -b {my-feature-branch-name}
 ```
 
-## Development setup
+## For Project Developers
 
-Development setup is very easy. Just clone this repository and start editing.
+Follow this section if you will be developing new features and fixing bugs for this repository.
+
+### Prerequisites
+
+- A good code editor. We suggest [VSCode](https://code.visualstudio.com/), [Atom](https://atom.io/) or [SublimeText](https://www.sublimetext.com/).
+- [NodeJS LTS+ and NPM 6.14+](https://nodejs.org/en/download/)
+- [Git 2.25+](https://git-scm.com/downloads)
+
+### Setup and Configuration
 
 ```sh
-git clone git@github.com:tforster/git-new.git
+# 1. Clone this repository as your new project
+git clone git@github.com:tforster/git-new.git /my/path/to/my/project-folder/
+cd /my/path/to/my/project-folder/git-new
+
+# 3. Create a new branch
+git checkout -b {new-branch-name}
+
+# 2. Make changes by editing files and/or using NPM to update dependent packages as well as package.json
+
+# 3. Stage changes
+git add -A
+
+# 4. Commit changes
+git commit -t"{detailed-commit-message}"
+
+# 5. Push changes
+git push origin {new-branch-name}
+
+# 6. Create a pull request
 ```
 
-## Release History
+## Change log
 
-- 0.1.0 **Initial Creation** (2020-04-09)
-
-Initial creation of this project and Git repository.
+See [CHANGELOG.md](changelog.md)
 
 ## Meta
 
@@ -72,11 +129,11 @@ Troy Forster – [@tforster](https://twitter.com/tforster) – troy.forster@gmai
 
 Distributed under the ISC license. See `LICENSE` for more information.
 
-[https://github.com/tforster/git-new](https://github.com/tforster/)
+[https://github.com/tforster/git-new](https://github.com/tforster/git-new)
 
 ## Contributing
 
-1. Fork it (<https://github.com/tforster/git-newfork>)
+1. Fork it (<https://github.com/tforster/git-new/fork>)
 2. Create your feature branch (`git checkout -b feature/fooBar`)
 3. Commit your changes (`git commit -am 'Add some fooBar'`)
 4. Push to the branch (`git push origin feature/fooBar`)
