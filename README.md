@@ -2,25 +2,20 @@
 
 _A cloneable Git template for repeatable and consistent project bootstraps_
 
-## Table of Contents
+# Table of Contents
 
 - [Git New](#git-new)
-  - [Table of Contents](#table-of-contents)
-- [For Developers](#for-developers)
-  - [Prerequisites](#prerequisites)
-  - [Setup and Configuration](#setup-and-configuration)
-  - [Usage](#usage)
+- [Table of Contents](#table-of-contents)
+- [Prerequisites](#prerequisites)
+- [Setup and Configuration](#setup-and-configuration)
+- [Usage](#usage)
 - [For Users](#for-users)
 - [Change Log](#change-log)
 - [Meta](#meta)
 - [Contributing](#contributing)
   - [Prerequisites](#prerequisites-1)
 
-# For Developers
-
-Follow this section if you are developing with, installing or deploying this repository.
-
-## Prerequisites
+# Prerequisites
 
 The versions listed for these prerequisites are current at the time of writing. More recent versions will likely work but "your mileage may vary".
 
@@ -28,7 +23,7 @@ The versions listed for these prerequisites are current at the time of writing. 
 - [Node.js v12.13.0 and NPM 6.14.5](https://nodejs.org/en/download/)
 - [Git 2.25](https://git-scm.com/downloads)
 
-## Setup and Configuration
+# Setup and Configuration
 
 Clone this repository as your new project.
 
@@ -36,7 +31,7 @@ Clone this repository as your new project.
 git clone git@github.com:tforster/git-new.git /my/path/to/my/project-name
 ```
 
-## Usage
+# Usage
 
 This repository is intended to serve as a template for new projects by providing a consistent set of control files. Use it by cloning to your new project folder, editing some key properties and re-initialising the .git folder to remove this history and finally replacing the remote with your own.
 
