@@ -119,7 +119,7 @@ git push origin {new-branch-name}
 # 6. Create a pull request
 ```
 
-## Change log
+## Change Log
 
 See [CHANGELOG.md](changelog.md)
 
