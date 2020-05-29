@@ -22,7 +22,7 @@ Follow this section if you are developing with, installing or deploying this rep
 
 ### Prerequisites
 
-- A good code editor. We suggest [VSCode](https://code.visualstudio.com/), [Atom](https://atom.io/) or [SublimeText](https://www.sublimetext.com/).
+- A good code editor.
 - [NodeJS LTS+ and NPM 6.14+](https://nodejs.org/en/download/)
 - [Git 2.25+](https://git-scm.com/downloads)
 
