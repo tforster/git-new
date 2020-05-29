@@ -23,7 +23,12 @@ Follow this section if you are developing with, installing or deploying this rep
 ### Prerequisites
 
 - A good code editor.
-- [NodeJS LTS+ and NPM 6.14+](https://nodejs.org/en/download/)
+### Prerequisites
+
+The versions listed for these prerequisites are current at the time of writing. More recent versions will likely work but "your mileage may vary".
+
+- A good code editor. 
+- [Node.js v12.13.0 and NPM 6.14.5](https://nodejs.org/en/download/)
 - [Git 2.25+](https://git-scm.com/downloads)
 
 ### Setup and Configuration
