@@ -2,7 +2,7 @@
   "name": "@tforster/git-new",
   "version": "0.2.0",
   "description": "A cloneable Git template for repeatable and consistent project bootstraps",
-  "license": "ISC",
+  "license": "MIT",
   "keywords": [
     "git",
     "template"
