@@ -1,11 +1,37 @@
-# Git New
+# Generic New Project Template
 
-_A cloneable Git template for repeatable and consistent project bootstraps_
+_A Git template for bootstrapping a variety of projects with a consistent set of control files._
 
-# Table of Contents
+## Instructions
 
-- [Git New](#git-new)
-- [Table of Contents](#table-of-contents)
+1. Create your new repository by clicking the "Use this template" [button](https://github.com/tforster/git-new/generate) from the GitHub repository. (or download from https://github.com/tforster/git-new/archive/master.zip and unzip)
+1. Follow the GitHub prompts to complete the configuration of your new repository
+1. Clone your new repository to your local develop environment
+1. Install NPM dependencies including linters and code prettiers `npm i`
+1. Edit [README.md](README.md)
+   - Edit the title to match your project
+   - Edit the description to describe your project
+   - Edit Prerequisites, Setup and Configuration, Usage, For Users and Meta sections
+1. Edit [package.json](package.json)
+   - Update the title to match the title of this README
+   - Update the description to match the description of this README
+   - Edit the semantic version to match your project requirements
+1. Update your LICENSE
+   - Edit the year and fullname variables in [LICENSE.txt](LICENSE.txt)
+   - The provided LICENSE file implements the MIT license as per [https://choosealicense.com/licenses/mit](https://choosealicense.com/licenses/mit)
+   - For closed source delete the LICENSE.txt file and update the package.json license property to "UNLICENSED"
+   - If neither MIT or UNLICENSED suit your needs consider creating a LICENSE.txt from [https://choosealicense.com/](https://choosealicense.com/)
+1. Update [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md). For more information on code of conduct see [https://opensource.guide/code-of-conduct/](https://opensource.guide/code-of-conduct/)
+1. Update [CONTRIBUTING.md](CONTRIBUTING.md). For more information about open source contributions see [https://help.github.com/en/github/building-a-strong-community/setting-guidelines-for-repository-contributors](https://help.github.com/en/github/building-a-strong-community/setting-guidelines-for-repository-contributors)
+1. Delete any unwanted files in /docker (or the entire /docker folder if you're not containerising)
+1. Update [CHANGELOG.md](CHANGELOG.md)
+1. Delete this instruction block
+
+# Table of Content
+
+- [Generic New Project Template](#generic-new-project-template)
+  - [Instructions](#instructions)
+- [Table of Content](#table-of-content)
 - [Prerequisites](#prerequisites)
 - [Setup and Configuration](#setup-and-configuration)
 - [Usage](#usage)
@@ -13,7 +39,6 @@ _A cloneable Git template for repeatable and consistent project bootstraps_
 - [Change Log](#change-log)
 - [Meta](#meta)
 - [Contributing](#contributing)
-  - [Prerequisites](#prerequisites-1)
 
 # Prerequisites
 
@@ -33,41 +58,16 @@ git clone git@github.com:tforster/git-new.git /my/path/to/my/project-name
 
 # Usage
 
-This repository is intended to serve as a template for new projects by providing a consistent set of control files. Use it by cloning to your new project folder, editing some key properties and re-initialising the .git folder to remove this history and finally replacing the remote with your own.
-
-1. Switch to your new project folder `cd /my/path/to/my/project-name`
-1. Remove the git-new .git database `rm -rf .git`
-1. Install NPM dependencies including linters and code prettiers `npm i`
-1. Edit [README.md](README.md)
-   - Edit the title to match your project
-   - Edit the description to describe your project
-1. Edit [package.json](package.json)
-   - Update the title to match the title of this README
-   - Update the description to match the description of this README
-   - Edit the semantic version to match your project requirements
-1. Update your LICENSE
-   - Edit the year and fullname variables in [LICENSE.txt](LICENSE.txt)
-   - The provided LICENSE file implements the MIT license as per [https://choosealicense.com/licenses/mit](https://choosealicense.com/licenses/mit)
-   - For closed source delete the LICENSE.txt file and update the package.json license property to "UNLICENSED"
-   - If neither MIT or UNLICENSED suit your needs consider creating a LICENSE.txt from [https://choosealicense.com/](https://choosealicense.com/)
-1. Delete any unwanted files in /docker (or the entire /docker folder if you're not containerising)
-1. Update [CHANGELOG.md](CHANGELOG.md)
-1. Re-initialise .git `git init`
-1. Add your own repo's origin `git remote add origin {my-git-origin}`
-1. Update package.json to reflect the new origin and clean up any other properties by following the prompts `npm init`
-1. Delete this instruction block
-1. Stage and commit files `git add -A && git commit -m"Initial creation"`
-1. Push `git push -u origin master`
-1. Create a develop branch (workflow dependent) `git checkout -b develop && git push -u origin develop`
-1. Your project and repo are ready for your first feature branch `git checkout -b {my-feature-branch-name}`
+- Describe how your repository should be used.
+- Include any references to other repositories such as NPM, DockerHub, etc.
 
 # For Users
 
-Place instructions here if there is some form of installable or runable artifact intended for end users.
+- Use this optional section to describe to end users how to install or run release artifacts.
 
 # Change Log
 
-See [CHANGELOG.md](changelog.md)
+See [CHANGELOG.md](CHANGELOG.md)
 
 # Meta
 
@@ -79,27 +79,4 @@ See [LICENSE](LICENSE.md) for more information.
 
 # Contributing
 
-This section applies if you will be developing new features and fixing bugs for this repository.
-
-```sh
-# Fork it from GitHub https://github.com/tforster/git-new/fork
-
-# Create your feature branch
-git checkout -b {meaninful-branch-name}
-
-# Commit your changes
-git commit -a"{meaninful commit message}"
-
-# Push to the branch
-git push origin {meaninful-branch-name}
-
-#Create a new Pull Request
-```
-
-## Prerequisites
-
-The prerequesites for contributing to this repo are the same is if you were developing with it.
-
-- A good code editor.
-- [Node.js v12.13.0 and NPM 6.14.5](https://nodejs.org/en/download/)
-- [Git 2.25](https://git-scm.com/downloads)
+See [CONTRIBUTING.md](CONTRIBUTING.md)
