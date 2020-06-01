@@ -1,83 +1,82 @@
-# Git New
+# Generic New Project Template
 
-> A cloneable Git template for repeatable and consistent project bootstraps
+_A Git template for bootstrapping a variety of projects with a consistent set of control files._
 
-Inspired by Eric Meyers CSS Reset, Git New is a simple tool to enforce a consistent baseline Git experience for new projects.
+## Instructions
 
-## Installation
+1. Create your new repository by clicking the "Use this template" [button](https://github.com/tforster/git-new/generate) from the GitHub repository. (or download from https://github.com/tforster/git-new/archive/master.zip and unzip)
+1. Follow the GitHub prompts to complete the configuration of your new repository
+1. Clone your new repository to your local develop environment
+1. Install NPM dependencies including linters and code prettiers `npm i`
+1. Edit [README.md](README.md)
+   - Edit the title to match your project
+   - Edit the description to describe your project
+   - Edit Prerequisites, Setup and Configuration, Usage, For Users and Meta sections
+1. Edit [package.json](package.json)
+   - Update the title to match the title of this README
+   - Update the description to match the description of this README
+   - Edit the semantic version to match your project requirements
+1. Update your LICENSE
+   - Edit the year and fullname variables in [LICENSE.txt](LICENSE.txt)
+   - The provided LICENSE file implements the MIT license as per [https://choosealicense.com/licenses/mit](https://choosealicense.com/licenses/mit)
+   - For closed source delete the LICENSE.txt file and update the package.json license property to "UNLICENSED"
+   - If neither MIT or UNLICENSED suit your needs consider creating a LICENSE.txt from [https://choosealicense.com/](https://choosealicense.com/)
+1. Update [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md). For more information on code of conduct see [https://opensource.guide/code-of-conduct/](https://opensource.guide/code-of-conduct/)
+1. Update [CONTRIBUTING.md](CONTRIBUTING.md). For more information about open source contributions see [https://help.github.com/en/github/building-a-strong-community/setting-guidelines-for-repository-contributors](https://help.github.com/en/github/building-a-strong-community/setting-guidelines-for-repository-contributors)
+1. Delete any unwanted files in /docker (or the entire /docker folder if you're not containerising)
+1. Update [CHANGELOG.md](CHANGELOG.md)
+1. Delete this instruction block
 
-Linux, Windows and OSX
+# Table of Content
+
+- [Generic New Project Template](#generic-new-project-template)
+  - [Instructions](#instructions)
+- [Table of Content](#table-of-content)
+- [Prerequisites](#prerequisites)
+- [Setup and Configuration](#setup-and-configuration)
+- [Usage](#usage)
+- [For Users](#for-users)
+- [Change Log](#change-log)
+- [Meta](#meta)
+- [Contributing](#contributing)
+
+# Prerequisites
+
+The versions listed for these prerequisites are current at the time of writing. More recent versions will likely work but "your mileage may vary".
+
+- A good code editor.
+- [Node.js v12.13.0 and NPM 6.14.5](https://nodejs.org/en/download/)
+- [Git 2.25](https://git-scm.com/downloads)
+
+# Setup and Configuration
+
+Clone this repository as your new project.
 
 ```sh
-git clone git@github.com:tforster/git-new.git
-```
-
-## Usage example
-
-This repository is intended to serve as a template for new projects by providing a consistent set of control files. Use it by cloning to your new project folder, editing some key properties, re-initialising the .git folder to remove this history and finally replacing the remote with your own.
-
-```sh
-# 1. Clone this repository as your new project
 git clone git@github.com:tforster/git-new.git /my/path/to/my/project-name
-cd /my/path/to/my/project-name
-
-# 2. Edit this README.md and package.json to suit your project
-#    - Edit the title to match your project
-#    - Edit the description to describe your project
-
-# 3. Edit package.json
-#    - Update the title to match the title of this README
-#    - Update the description to match the description of this README
-#    - Edit the semantic version to match your project requirements
-#    - Change the Git details including repository, bugs and homepage
-
-# 4. Delete any unwanted files in /docker (or the entire /docker folder if you're not containerising)
-
-# 5. Delete the hidden .git folder created when you cloned
-rm -rf .git
-
-# 6. Re-initialise .git
-git init
-
-# 7. Add your own repo's origin
-git remote add origin my-git-origin
-
-# 8. Delete this instruction block
-
-# 9. Stage and commit files
-git add -A
-git commit -m"Initial creation"
-
-# 10. Push
-git push -u origin master
 ```
 
-## Development setup
+# Usage
 
-Development setup is very easy. Just clone this repository and start editing.
+- Describe how your repository should be used.
+- Include any references to other repositories such as NPM, DockerHub, etc.
 
-```sh
-git clone git@github.com:tforster/git-new.git
-```
+# For Users
 
-## Release History
+- Use this optional section to describe to end users how to install or run release artifacts.
 
-- 0.1.0 **Initial Creation** (2020-04-09)
+# Change Log
 
-Initial creation of this project and Git repository.
+See [CHANGELOG.md](CHANGELOG.md)
 
-## Meta
+# Meta
 
 Troy Forster – [@tforster](https://twitter.com/tforster) – troy.forster@gmail.com
 
-Distributed under the ISC license. See `LICENSE` for more information.
+See [LICENSE](LICENSE.md) for more information.
 
-[https://github.com/tforster/git-new](https://github.com/tforster/)
+[https://github.com/tforster/git-new](https://github.com/tforster/git-new)
 
-## Contributing
+# Contributing
 
-1. Fork it (<https://github.com/tforster/git-newfork>)
-2. Create your feature branch (`git checkout -b feature/fooBar`)
-3. Commit your changes (`git commit -am 'Add some fooBar'`)
-4. Push to the branch (`git push origin feature/fooBar`)
-5. Create a new Pull Request
+See [CONTRIBUTING.md](CONTRIBUTING.md)
