@@ -8,6 +8,8 @@ The prerequesites for contributing to this repo are the same is if you were deve
 - [Node.js v12.13.0 and NPM 6.14.5](https://nodejs.org/en/download/)
 - [Git 2.25](https://git-scm.com/downloads)
 
+## Usage 
+
 ```sh
 # Fork it from GitHub https://github.com/tforster/git-new/fork
 
