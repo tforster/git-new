@@ -4,7 +4,7 @@ _A Git template for bootstrapping a variety of projects with a consistent set of
 
 ## Instructions
 
-1. Create your new repository by clicking the "Use this template" [button](https://github.com/tforster/git-new/generate) from the GitHub repository.
+1. Create your new repository by clicking the "Use this template" [button](https://github.com/tforster/git-new/generate) from the GitHub repository. (or download from https://github.com/tforster/git-new/archive/master.zip and unzip)
 1. Follow the GitHub prompts to complete the configuration of your new repository
 1. Clone your new repository to your local develop environment
 1. Install NPM dependencies including linters and code prettiers `npm i`
