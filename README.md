@@ -30,10 +30,10 @@ _A Git template for bootstrapping a variety of projects with a consistent set of
 
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
-  - [Environment File (.env) Details](#environment-file-env-details)
+  - [Configuration](#configuration)
 - [Usage](#usage)
-  - [For Local Development](#for-local-development)
-  - [To Deploy to Stage or Prod](#to-deploy-to-stage-or-prod)
+  - [Development](#development)
+  - [Deployment](#deployment)
 - [Contributing](#contributing)
 - [Change Log](#change-log)
 

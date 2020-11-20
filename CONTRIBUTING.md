@@ -2,11 +2,10 @@
 
 _A step-by-step guide for project installation, development and contribution._
 
-- [Contributing](#contributing)
-  - [Getting Started](#getting-started)
-  - [Code of Conduct](#code-of-conduct)
-  - [Development](#development)
-  - [Versioning](#versioning)
+- [Getting Started](#getting-started)
+- [Code of Conduct](#code-of-conduct)
+- [Development](#development)
+- [Versioning](#versioning)
 
 ## Getting Started
 
