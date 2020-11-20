@@ -6,6 +6,7 @@ dist
 .gulp
 yarn-error.log
 .serverless
+.env
 
 ### VSCode Projects###
 .vscode
