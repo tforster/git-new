@@ -1,6 +1,6 @@
 {
   "name": "@tforster/git-new",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "A cloneable Git template for repeatable and consistent project bootstraps",
   "license": "MIT",
   "keywords": [
@@ -11,11 +11,11 @@
     "lint": "npx eslint "
   },
   "devDependencies": {
-    "eslint": "^6.7.2",
-    "eslint-config-prettier": "^6.7.0",
-    "eslint-plugin-html": "^6.0.0",
-    "eslint-plugin-prettier": "^3.1.2",
-    "prettier": "^2.0.4"
+    "eslint": "^7.13.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-html": "^6.1.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier": "^2.2.0"
   },
   "repository": {
     "type": "git",

@@ -6,9 +6,11 @@ dist
 .gulp
 yarn-error.log
 .serverless
+.env
 
 ### VSCode Projects###
-.vscode
+.vscode/*
+!.vscode/launch.json
 
 ### Atom Projects ###
 
@@ -72,4 +74,3 @@ jspm_packages
 # Output of 'npm pack'
 *.tgz
 ### Visual Studio ###
-
