@@ -1,4 +1,4 @@
-# Contributing
+# Contributing <!-- omit in toc -->
 
 _A step-by-step guide for project installation, development and contribution._
 

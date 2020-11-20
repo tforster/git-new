@@ -23,7 +23,7 @@ _A Git template for bootstrapping a variety of projects with a consistent set of
    - If neither MIT or UNLICENSED suit your needs consider creating a LICENSE.txt from [https://choosealicense.com/](https://choosealicense.com/)
 1. Update [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md). For more information on code of conduct see [https://opensource.guide/code-of-conduct/](https://opensource.guide/code-of-conduct/)
 1. Update [CONTRIBUTING.md](CONTRIBUTING.md). For more information about open source contributions see [https://help.github.com/en/github/building-a-strong-community/setting-guidelines-for-repository-contributors](https://help.github.com/en/github/building-a-strong-community/setting-guidelines-for-repository-contributors)
-1. Delete any unwanted files in /docker (or the entire /docker folder if you're not containerising)
+1. Delete any unwanted/unused files or folders such as `/docker`, `/webproducer`, etc.
 1. Update [CHANGELOG.md](CHANGELOG.md)
 1. Delete this instruction block</i>
 
@@ -66,7 +66,7 @@ The versions listed for these prerequisites are current at the time of writing. 
    npm install
    ```
 
-### Environment File (.env) Details
+### Configuration
 
 Environment files are .gitignored by default since they typically contain sensitive information. This section describes how to manually create an environment file for this project. Note that the .env file is located in the webproducer folder.
 
@@ -79,9 +79,9 @@ Environment files are .gitignored by default since they typically contain sensit
 
 _Describe the usage here._
 
-### For Local Development
+### Development
 
-### To Deploy to Stage or Prod
+### Deployment
 
 ## Contributing
 
